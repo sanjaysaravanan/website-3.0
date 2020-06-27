@@ -3,10 +3,9 @@ import {
   makeStyles,
   AppBar,
   Toolbar,
-  IconButton,
-  Typography
+  Typography,
+  Link
 } from "@material-ui/core";
-import "./NavBar.module.css";
 
 const useStyles = makeStyles(theme => ({
   mainNav: {
@@ -16,8 +15,9 @@ const useStyles = makeStyles(theme => ({
   listNav: {
     display: "inline-block",
     marginLeft: 40,
+    textDecoration: "none",
+    color: "#FFF",
     position: "relative",
-    cursor: "pointer",
     "&::before": {
       content: "''",
       position: "absolute",
@@ -34,6 +34,10 @@ const useStyles = makeStyles(theme => ({
       visiblity: "visible",
       transform: "scaleX(1)"
     },
+    "&:hover": {
+      textDecoration: "none",
+      color: "#FFF"
+    },
     textTransform: "uppercase",
     transition: ".5s"
   }
@@ -49,21 +53,21 @@ function NavBar() {
       elevation={0}
     >
       <Toolbar>
-        <Typography variant="h6" className={classes.listNav}>
-          Home
-        </Typography>
-        <Typography variant="h6" className={classes.listNav}>
-          About
-        </Typography>
-        <Typography variant="h6" className={classes.listNav}>
-          Projects
-        </Typography>
-        <Typography variant="h6" className={classes.listNav}>
-          Blog
-        </Typography>
-        <Typography variant="h6" className={classes.listNav}>
-          Contact
-        </Typography>
+        <a href="#home" className={classes.listNav}>
+          <Typography variant="h6">Home</Typography>
+        </a>
+        <a href="#about" className={classes.listNav}>
+          <Typography variant="h6">About</Typography>
+        </a>
+        <a href="#project" className={classes.listNav}>
+          <Typography variant="h6">Projects</Typography>
+        </a>
+        <a href="#blog" className={classes.listNav}>
+          <Typography variant="h6">Blog</Typography>
+        </a>
+        <a href="#contact" className={classes.listNav}>
+          <Typography variant="h6">Contact</Typography>
+        </a>
       </Toolbar>
     </AppBar>
   );

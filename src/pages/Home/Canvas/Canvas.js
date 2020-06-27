@@ -27,7 +27,6 @@ export default function InteractiveCanvas() {
     const c = canvasRef.current;
     const ctx = c.getContext("2d");
     const resize = () => {
-      console.log("resizing..");
       resizeRef.current();
     };
     const onResize = window.addEventListener("resize", resize);

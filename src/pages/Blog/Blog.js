@@ -8,9 +8,9 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-function About() {
+function Blog() {
   const classes = useStyles();
   return <div className={classes.root}></div>;
 }
 
-export default About;
+export default Blog;

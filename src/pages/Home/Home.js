@@ -37,6 +37,8 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: theme.spacing(1),
     transition: ".5s",
     cursor: "pointer",
+    textDecoration: "none",
+    color: "#FFF",
     "&:hover": {
       border: "2px solid #E67E22",
       backgroundColor: "#E67E22",
@@ -44,18 +46,21 @@ const useStyles = makeStyles(theme => ({
       "& $arrowIcon": {
         transform: "rotate(90deg)",
         transition: ".5s"
-      }
+      },
+      textDecoration: "none",
+      color: "#FFF"
     },
     [theme.breakpoints.down("sm")]: {
       fontSize: "13pt"
     }
   },
   arrowIcon: {
-    transition: ".5s"
+    transition: ".5s",
+    verticalAlign: "middle"
   }
 }));
 
-function Home() {
+function Home({ scrollMethod, homeRef }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -65,7 +70,7 @@ function Home() {
           .<br />
           I'm a full-stack developer.
         </div>
-        <div className={classes.workView}>
+        <div className={classes.workView} onClick={() => scrollMethod(homeRef)}>
           View my work <ArrowForwardIcon className={classes.arrowIcon} />
         </div>
       </div>

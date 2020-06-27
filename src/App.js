@@ -9,9 +9,7 @@ import {
 
 import "./App.css";
 
-import Home from "../src/pages/Home/Home";
-import About from "../src/pages/About/About";
-import NavBar from "../src/pages/NavBar/NavBar";
+import NavBar from "../src/pages/NavBar/NavigationBar";
 
 const theme = createMuiTheme({
   palette: {
@@ -38,8 +36,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="App">
-          <Home />
-          <About />
+          <NavBar />
         </div>
       </ThemeProvider>
     </StylesProvider>
