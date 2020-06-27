@@ -39,7 +39,6 @@ function App() {
         <CssBaseline />
         <div className="App">
           <Home />
-          <NavBar />
           <About />
         </div>
       </ThemeProvider>

@@ -6,7 +6,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    margin: "0px"
   },
   home: {
     color: "#FFF",
@@ -18,7 +19,8 @@ const useStyles = makeStyles(theme => ({
     fontWeight: 350,
     marginBottom: 20,
     [theme.breakpoints.down("sm")]: {
-      fontSize: "2rem"
+      fontSize: "1.5rem",
+      lineHeight: "1.5rem"
     }
   },
   highlight: {
@@ -43,6 +45,9 @@ const useStyles = makeStyles(theme => ({
         transform: "rotate(90deg)",
         transition: ".5s"
       }
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "13pt"
     }
   },
   arrowIcon: {
