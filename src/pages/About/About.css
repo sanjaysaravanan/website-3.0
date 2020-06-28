@@ -1,0 +1,22 @@
+.iconDivs {
+  height: 100px;
+  width: 100px;
+  background-color: #e67e22;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: auto;
+}
+
+.iconsRootDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 24px 50px 24px;
+}
+
+#responsive {
+  vertical-align: middle;
+}
