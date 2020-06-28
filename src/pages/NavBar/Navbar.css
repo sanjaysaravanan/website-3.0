@@ -5,7 +5,7 @@
   cursor: pointer;
   outline: none;
   background: transparent;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 .header_link:hover {
@@ -19,4 +19,8 @@
 
 .selected {
   color: #e67e22;
+}
+
+.MainNav {
+  border-bottom: 4px solid #e67e22;
 }

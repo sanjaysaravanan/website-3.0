@@ -12,7 +12,7 @@ import CloseIcon from "@material-ui/icons/Close";
 const getDimensions = ele => {
   const { height } = ele.getBoundingClientRect();
   const offsetTop = ele.offsetTop;
-  const offsetBottom = offsetTop + height;
+  const offsetBottom = offsetTop + height + 50;
 
   return {
     height,
@@ -29,10 +29,6 @@ const scrollTo = ele => {
 };
 
 const useStyles = makeStyles(theme => ({
-  mainNav: {
-    transition: ".3s",
-    borderBottom: "4px solid #E67E22"
-  },
   listNav: {
     display: "inline-block",
     marginLeft: 40,
@@ -154,7 +150,7 @@ function NavBar() {
       <AppBar
         position="sticky"
         color="secondary"
-        className={classes.mainNav}
+        className="MainNav"
         elevation={0}
       >
         <Toolbar ref={headerRef}>

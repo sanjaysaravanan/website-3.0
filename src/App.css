@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-header {
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  animation-duration: 0.75s;
+  /* animation-timing-function: ease; */
+  animation-delay: 0s;
+  /* animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running; */
+  animation-name: slideInLeft;
+  position: relative;
+}
+
+.header-bar {
+  height: 4px;
+  width: 70px;
+  background-color: #0d1011;
+  margin: auto;
+  animation-duration: 1.25s;
+  /* animation-timing-function: ease; */
+  animation-delay: 0s;
+  /* animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running; */
+  animation-name: slideInLeftBar;
+  position: relative;
+}
+/* @media screen and (min-width: 992px) {
+    @keyframes slideInLeft {
+      50% {
+        right: 300px;
+        opacity: 0.5;
+      }
+      100% {
+        right: 0px;
+        opacity: 1;
+      }
+    }
+  
+    @keyframes slideInLeftBar {
+      50% {
+        right: 300px;
+        opacity: 0;
+      }
+      100% {
+        right: 0px;
+        opacity: 1;
+      }
+    }
+  } */
