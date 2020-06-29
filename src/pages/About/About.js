@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles, Grid } from "@material-ui/core";
+import { makeStyles, Grid, Link } from "@material-ui/core";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import "./About.css";
 import MyPic from "../../assets/images/sanjay.jpg";
@@ -38,8 +38,10 @@ const useStyles = makeStyles(theme => ({
     borderRadius: "50%"
   },
   companyLink: {
-    textDecoration: "none",
-    color: theme.palette.primary.main
+    color: theme.palette.primary.main,
+    "&:hover": {
+      textDecoration: "none"
+    }
   },
   features: {
     marginTop: 20
@@ -107,13 +109,13 @@ function About() {
             <div className={classes.textHeaderDiv}>Who's this guy?</div>
             <div className={classes.textDiv}>
               I'm a Full-Stack Developer for{" "}
-              <a
+              <Link
                 href="https://www.altimetrik.com"
                 className={classes.companyLink}
                 target="_blank"
               >
                 Altimetrik
-              </a>{" "}
+              </Link>{" "}
               in India, Chennai. I have serious passion for API development, UI,
               DevOps and Cloud services.
             </div>
