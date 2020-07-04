@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { makeStyles, Typography, withStyles } from "@material-ui/core";
+import { makeStyles, withStyles } from "@material-ui/core";
 import { Tabs, Tab, Box } from "@material-ui/core";
 import ListProjects from "../ProjectsList";
 
