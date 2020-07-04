@@ -12,7 +12,7 @@ import CloseIcon from "@material-ui/icons/Close";
 const getDimensions = ele => {
   const { height } = ele.getBoundingClientRect();
   const offsetTop = ele.offsetTop;
-  const offsetBottom = offsetTop + height + 50;
+  const offsetBottom = offsetTop + height + 40;
 
   return {
     height,

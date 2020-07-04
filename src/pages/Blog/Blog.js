@@ -1,11 +1,14 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 const useStyles = makeStyles(theme => ({
   root: {
-    height: "100vh",
     width: "100%",
     transition: ".3s",
-    paddingTop: 100
+    paddingTop: 100,
+    paddingBottom: 100
+  },
+  comingSoon: {
+    paddingTop: "20px"
   }
 }));
 
@@ -15,6 +18,11 @@ function Blog() {
     <div className={classes.root}>
       <div className="nav-header">BLOG</div>
       <div className="header-bar"></div>
+      <div className={classes.comingSoon}>
+        <Typography variant="h4" color="primary">
+          COMING SOON
+        </Typography>
+      </div>
     </div>
   );
 }

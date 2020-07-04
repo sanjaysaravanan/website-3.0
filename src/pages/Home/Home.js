@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme => ({
     }
   },
   highlight: {
-    color: "#E67E22"
+    color: "#E67E22",
+    fontWeight: "500"
   },
   workView: {
     border: "2px solid #FFF",

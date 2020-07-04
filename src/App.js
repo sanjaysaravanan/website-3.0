@@ -26,7 +26,7 @@ const theme = createMuiTheme({
     background: { default: "#f9fafb" }
   },
   typography: {
-    fontFamily: ["Raleway"].join(",")
+    fontFamily: ['"Segoe UI"'].join(",")
   }
 });
 
