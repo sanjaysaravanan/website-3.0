@@ -1,8 +1,8 @@
 import Proj1Main from "../../../assets/images/hero-min.jpg";
-import Proj1Sub1 from "../../../assets/images/1.jpg";
-import Proj1Sub2 from "../../../assets/images/2.jpg";
-import Proj1Sub3 from "../../../assets/images/3.jpg";
-import Proj1Sub4 from "../../../assets/images/4.jpg";
+import Proj1Sub1 from "../../../assets/images/projone.jpg";
+import Proj1Sub2 from "../../../assets/images/projtwo.jpg";
+import Proj1Sub3 from "../../../assets/images/projthree.jpg";
+import Proj1Sub4 from "../../../assets/images/projfour.jpg";
 
 export default [
   {
