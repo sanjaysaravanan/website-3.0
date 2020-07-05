@@ -1,5 +1,6 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
+import Form from "./Form";
 const useStyles = makeStyles(theme => ({
   root: {
     height: "100vh",
@@ -7,6 +8,9 @@ const useStyles = makeStyles(theme => ({
     transition: ".3s",
     backgroundColor: theme.palette.secondary.dark,
     paddingTop: 100
+  },
+  typoDiv: {
+    padding: "24px 0px"
   }
 }));
 
@@ -16,6 +20,12 @@ function Contact() {
     <div className={classes.root}>
       <div className="nav-header">CONTACT</div>
       <div className="header-bar"></div>
+      <div className={classes.typoDiv}>
+        <Typography variant="h6">
+          Have a question or want to work together?
+        </Typography>
+      </div>
+      <Form />
     </div>
   );
 }
